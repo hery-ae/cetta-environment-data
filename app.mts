@@ -55,6 +55,12 @@ app.get('/api', (req, res) => {
     EnvironmentData.findAll()
     .then(
         (value) => {
+            if (value.length) {
+                const updatedAt = value.sort((a, b) => Date.parse(a.updated_at) - Date.parse(b.updated_at)).at(value.length - 1)?.updated_at
+
+                res.setHeader('Last-Modified', (new Date(updatedAt as string)).toUTCString())
+            }
+
             res.json(
                 value.reduce(
                     ( data: any, item ) => {

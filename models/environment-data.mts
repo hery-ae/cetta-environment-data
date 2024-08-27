@@ -14,6 +14,8 @@ class EnvironmentData extends Model {
     declare place: string
     declare unit: string
     declare value: string
+    declare created_at: string
+    declare updated_at: string
 }
 
 EnvironmentData.init(
