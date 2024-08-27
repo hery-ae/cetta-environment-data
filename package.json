@@ -1,0 +1,32 @@
+{
+  "name": "cetta-environment-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hery-ae/cetta-environment-data.git"
+  },
+  "keywords": [
+    "environment"
+  ],
+  "author": "hery-ae",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hery-ae/cetta-environment-data/issues"
+  },
+  "homepage": "https://github.com/hery-ae/cetta-environment-data#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.11",
+    "typescript": "^5.4.5"
+  }
+}
